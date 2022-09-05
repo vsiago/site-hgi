@@ -290,7 +290,20 @@ h1, h2, h3 {
         grid-column: 3;
     }
 
-    .link--arrow--rigth {
-        padding: ;
+    .display-1 {
+        width: 100%;
+    }
+    
+    .sc-home-destaque {
+        width: 100%;
+    }
+
+    .description-oferecemos {
+        margin-top: 10px;
+        max-width: 90%;
+    }
+    
+    .navbar__list {
+        display: none;
     }
 }
