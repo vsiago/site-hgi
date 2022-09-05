@@ -3,6 +3,7 @@
     --cor-blue-light-light: #ECF0F3;
     --cor-blue-dark: #464A64;
     --cor-grey-blue: #797D95;
+    --cor-blue-primary: #1D8DE3;
 }
 
 /* ******** DISPLAYS DEFAULTS ******** */
@@ -49,6 +50,12 @@
     position: absolute;
     right: -22px;
     top: 7px;
+}
+
+.active {
+    color: var(--cor-blue-primary);
+    font-weight: 600;
+    border-bottom: solid 3px var(--cor-blue-primary);
 }
 
 /* ******** FIM DISPLAYS DEFAULTS ******** */
@@ -148,7 +155,7 @@ h1, h2, h3 {
 }
 
 .container-sc-home {
-    max-width: 980px;
+    max-width: 1000px;
     margin: auto;
     height: calc(100vh - 110px);
     display: flex;
@@ -162,6 +169,11 @@ h1, h2, h3 {
     width: 70%;
 }
 
+.sc-home-destaque .display-1 {
+    font-weight: 500;
+    font-size: clamp(3rem, 1rem + 4vw, 5rem);
+}
+
 .description-oferecemos {
     margin-top: 10px;
     max-width: 70%;
@@ -172,27 +184,28 @@ h1, h2, h3 {
 
 
 .card-reserve-um-atendimento {
+    width: 82%;
     margin-top: 20px;
     position: relative;
     z-index: 1;
+    margin-top: 3.5rem;
 }
 
 .reserve-um-atendimento-title {
     font-size: .8rem;
     font-weight: bold;
-    margin: 50px;
 }
 
 .card-container-reserve-um-atendimento {
     background: linear-gradient(90deg, #ECEFF2 0.74%, rgba(236, 239, 242, 0.85) 108.25%);
     box-shadow: -5px 31px 43px rgba(0, 0, 0, 0.08);
     max-width: 980px;
-    height: 150px;
+    height: 130px;
 }
 
 .container-reserve-um-atendimento {
     margin-top: 15px;
-    padding: 0 50px;
+    padding: 0 30px;
 }
 
 
