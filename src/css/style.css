@@ -126,10 +126,11 @@ h1, h2, h3 {
 /* header */
 
 .navbar__container {
+    max-width: 980px;
+    padding: 0 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 980px;
     margin: auto;
     height: 110px;
     box-sizing: border-box;
@@ -158,6 +159,7 @@ h1, h2, h3 {
 
 .container-sc-home {
     max-width: 1000px;
+    padding: 0 30px;
     margin: auto;
     height: calc(100vh - 110px);
     display: flex;
@@ -178,7 +180,7 @@ h1, h2, h3 {
 
 .description-oferecemos {
     margin-top: 10px;
-    max-width: 70%;
+    max-width: 80%;
 }
 
 
@@ -248,5 +250,47 @@ h1, h2, h3 {
 @media (max-width: 600px) {
     #btn-mobile {
         display: block;
+    }
+
+    .bg-cinza {
+        display: none;
+    }
+
+    .card-reserve-um-atendimento {
+        width: 100%;
+    }
+
+    .description-oferecemos {
+        font-size: 1rem;
+    }
+
+    .card-reserve-um-atendimento {
+        font-size: .8rem;
+    }
+
+    .link--arrow--rigth {
+        font-size: .8rem;
+    }
+
+    .container-reserve-um-atendimento {
+        display: grid;
+        grid-template-columns: repeat(3 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .data-container {
+        grid-column: 1;
+    }
+
+    .local-container {
+        grid-column: 2;
+    }
+
+    .service-container {
+        grid-column: 3;
+    }
+
+    .link--arrow--rigth {
+        padding: ;
     }
 }
